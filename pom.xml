@@ -19,14 +19,17 @@
 		<java.version>1.8</java.version>
 		<jline.version>3.12.1</jline.version>
 		<guava.version>28.1-jre</guava.version>
+		<picocli-shell-jline3.version>4.5.2</picocli-shell-jline3.version>
+		<jansi.version>2.3.1</jansi.version>
+		<jna.version>5.7.0</jna.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.shell</groupId>
 			<artifactId>spring-shell-starter</artifactId>
 			<version>2.0.1.RELEASE</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -36,10 +39,10 @@
 			<artifactId>picocli-spring-boot-starter</artifactId>
 			<version>4.6.1</version>
 		</dependency>-->
-		<dependency>
+		<!--<dependency>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<groupId>org.springframework.boot</groupId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.gitlab4j</groupId>
 			<artifactId>gitlab4j-api</artifactId>
@@ -49,12 +52,17 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>info.picocli</groupId>
 			<artifactId>picocli-shell-jline3</artifactId>
-			<version>4.0.2</version>
+			<version>${picocli-shell-jline3.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+			<version>${jansi.version}</version>
+		</dependency>
+		<!--<dependency>
 			<groupId>org.jline</groupId>
 			<artifactId>jline</artifactId>
 			<version>${jline.version}</version>
